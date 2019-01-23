@@ -1,0 +1,28 @@
+.ms-button {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  margin-top: 8px;
+  border: none;
+  color: #fff;
+  background: var(--palette-success, #2bcd75);
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ms-button:hover,
+.ms-button:active,
+.ms-button:link,
+.ms-button:visited,
+.ms-button:focus {
+  text-decoration: none;
+}
+
+.ms-button:hover {
+  background: var(--palette-success-hover, #26bd6b);
+}
+
+.ms-button:active {
+  background: var(--palette-success-click, #20b263);
+}
