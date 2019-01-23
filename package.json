@@ -6,7 +6,8 @@
   "module": "dist/index.es.js",
   "scripts": {
     "build": "rollup -c rollup.config.js",
-    "watch": "rollup -c rollup.config.js -w"
+    "storybook": "start-storybook -p 6006 -c .storybook",
+    "build-storybook": "build-storybook"
   },
   "author": "Dmitry Kovalev",
   "license": "MIT",
@@ -23,8 +24,13 @@
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
-    "babel-loader": "^7.1.5",
+    "@storybook/addon-actions": "^4.1.7",
+    "@storybook/addon-links": "^4.1.7",
+    "@storybook/addons": "^4.1.7",
+    "@storybook/react": "^4.1.7",
+    "babel-loader": "^8.0.5",
     "css-loader": "^0.28.9",
+    "prettier": "^1.16.1",
     "rollup": "^0.56.2",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^8.3.0",
